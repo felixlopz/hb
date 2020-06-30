@@ -5,20 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Happy Birthday!</title>
     <link rel="stylesheet" href="style.css" />
-    <audio autoplay loop>
-      <source src="./assets/troll-inc.mp3" type="audio/mpeg">
-    </audio>
+    
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
-    
+
+    <audio autoplay loop id="troll">
+      <source src="./assets/troll-inc.mp3" type="audio/mpeg">
+    </audio>
+   
     <div class="container">
       <div class="overlay"></div>
-     
-      
+       
       <div class="images"">
         <div class="img-container img-container-1">
           <img src="./assets/durarara-1.png" alt="" />
@@ -108,5 +109,10 @@
         <img src="./assets/cake.gif" alt="" />
       </div>
     </div>
+    <script>
+      window.addEventListener('load', function(){
+        document.getElementById('troll').play();
+      });
+    </script>
   </body>
 </html>
