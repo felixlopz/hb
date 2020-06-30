@@ -5,54 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Happy Birthday!</title>
     <link rel="stylesheet" href="style.css" />
-    
+
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
+    <audio src="/troll-inc.mp3" id="troll"></audio>
 
-    <audio autoplay loop id="troll">
-      <source src="./assets/troll-inc.mp3" type="audio/mpeg">
-    </audio>
-   
     <div class="container">
       <div class="overlay"></div>
-       
-      <div class="images"">
+
+      <div class="images">
         <div class="img-container img-container-1">
           <img src="./assets/durarara-1.png" alt="" />
         </div>
 
-         <div class="img-container img-container-2">
+        <div class="img-container img-container-2">
           <img src="./assets/durara-2.png" alt="" />
         </div>
-        
+
         <div class="img-container img-container-3">
           <img src="./assets/hxh-1.png" alt="" />
         </div>
 
-        
         <div class="img-container img-container-4">
           <img src="./assets/kimi-2.png" alt="" />
         </div>
 
-        
         <div class="img-container img-container-5">
           <img src="./assets/kimi-3.png" alt="" />
         </div>
 
-        
         <div class="img-container img-container-6">
           <img src="./assets/monogatari-1.png" alt="" />
         </div>
-        
+
         <div class="img-container img-container-7">
           <img src="./assets/kimi-1.png" alt="" />
         </div>
 
-        
         <div class="img-container img-container-8">
           <img src="./assets/hxh-2.png" alt="" />
         </div>
@@ -63,9 +56,7 @@
         <div class="img-container tulip-2">
           <img src="./assets/tulips.png" alt="" />
         </div>
-       
       </div>
-      
 
       <div class="msg">
         <h1 class="msg__letter">
@@ -105,13 +96,13 @@
       <div class="img-container fireworks-2">
         <img src="./assets/fireworks.gif" alt="" />
       </div>
-      <div class="img-container cake">
+      <div class="img-container cake" id="cake">
         <img src="./assets/cake.gif" alt="" />
       </div>
     </div>
     <script>
-      window.addEventListener('load', function(){
-        document.getElementById('troll').play();
+      document.getElementById("cake").addEventListener("click", () => {
+        document.getElementById("troll").play();
       });
     </script>
   </body>
