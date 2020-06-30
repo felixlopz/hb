@@ -279,4 +279,17 @@ body {
     width: 100%;
   }
 
+  .cake {
+    width: 60px;
+    height: 60px;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .cake::before {
+    transform: translateX(-40%);
+
+  }
+
 }
