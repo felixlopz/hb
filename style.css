@@ -27,6 +27,7 @@ body {
   background: var(--tertiary);
   color: white;
   font-family: 'Roboto', sans-serif;
+  overflow: hidden;
 
 }
 
@@ -142,6 +143,33 @@ body {
   right: 0;
 }
 
+.conffeti {
+  top: 0;
+  width: 50%;
+  height: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+  right: 0;
+}
+
+
+.fireworks {
+  top: 20%;
+  left: 62%;
+}
+
+.fireworks-2 {
+  top: 70%;
+  left: 30%;
+}
+
+.cake {
+  width: 70px;
+  height: 70px;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
 
 .img-container img {
   width: 100%;
@@ -155,6 +183,90 @@ body {
 .msg {}
 
 .msg__letter {
-  font-size: 7rem;
+  font-size: 6.5rem;
   line-height: 1.1;
+}
+
+
+@media only screen and (max-width: 400px) {
+
+  .msg__letter {
+    font-size: 5.2rem;
+    line-height: 1.1;
+  }
+
+
+  .conffeti {
+    width: 100%;
+  }
+
+  .fireworks,
+  .fireworks-2 {
+    display: none;
+  }
+
+
+  .img-container-1 {
+    top: 15rem;
+    width: 30%;
+    height: auto;
+    left: 0;
+  }
+
+  .img-container-2 {
+    top: 30rem;
+    width: 30%;
+    height: auto;
+    left: 0;
+  }
+
+
+  .img-container-3 {
+    top: 35rem;
+    width: 40%;
+    height: auto;
+    left: 0;
+  }
+
+
+  .img-container-4 {
+    top: 43rem;
+    width: 35%;
+    height: auto;
+    left: 0;
+  }
+
+  .img-container-5 {
+    top: 10rem;
+    width: 35%;
+    height: auto;
+    right: 0;
+  }
+
+  .img-container-6 {
+    top: 18rem;
+    width: 35%;
+    height: auto;
+    right: 0;
+  }
+
+  .img-container-7 {
+    top: 28rem;
+    width: 35%;
+    height: auto;
+    right: 0;
+  }
+
+  .img-container-8 {
+    top: 36rem;
+    width: 35%;
+    height: auto;
+    right: 0;
+  }
+
+
+  .images {
+    width: 100%;
+  }
+
 }
